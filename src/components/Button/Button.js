@@ -1,12 +1,14 @@
 import React from "react";
+import "./Button.css"
 
 
 
-function Button( {text} ) {
+function Button( {text, isClickButton, handleClick} ) {
 
     return (
         <button
-            className="">
+            className={isClickButton ? "click-button" : "reset-button"} 
+            onClick={ handleClick } >
             {text}
         </button>
     )
