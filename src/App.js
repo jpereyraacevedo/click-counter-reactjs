@@ -11,12 +11,10 @@ function App() {
 
   let handleClick = () => {
     setNumClicks (numClicks + 1);
-    return numClicks
   }
 
   let resetCounter = () => {
     setNumClicks (0)
-    return numClicks
   }
 
   return (
